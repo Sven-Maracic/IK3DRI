@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\platformer\\ik3dri\\myproject\\source\\myproject\\variant_combat\\interfaces\\combatdamageable.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\platformer\\ik3dri\\myproject\\intermediate\\build\\win64\\x64\\myprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\platformer\\ik3dri\\myproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\myproject\\definitions.myproject.h",
+            "c:\\platformer\\ik3dri\\myproject\\source\\myproject\\variant_combat\\interfaces\\combatdamageable.h",
+            "c:\\platformer\\ik3dri\\myproject\\intermediate\\build\\win64\\unrealeditor\\inc\\myproject\\uht\\combatdamageable.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
