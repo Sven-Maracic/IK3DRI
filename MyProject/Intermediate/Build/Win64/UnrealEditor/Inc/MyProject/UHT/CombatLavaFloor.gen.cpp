@@ -228,14 +228,14 @@ ACombatLavaFloor::~ACombatLavaFloor() {}
 // ********** End Class ACombatLavaFloor ***********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_MyProject_Statics
+struct Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ACombatLavaFloor, ACombatLavaFloor::StaticClass, TEXT("ACombatLavaFloor"), &Z_Registration_Info_UClass_ACombatLavaFloor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACombatLavaFloor), 602318518U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_MyProject_4115834177(TEXT("/Script/MyProject"),
-	Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_MyProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_MyProject_4115834177(TEXT("/Script/MyProject"),
+	Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

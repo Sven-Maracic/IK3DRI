@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class ACombatAIController ******************************************************
 MYPROJECT_API UClass* Z_Construct_UClass_ACombatAIController_NoRegister();
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACombatAIController(); \
 	friend struct Z_Construct_UClass_ACombatAIController_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ACombatAIController)
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_17_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ACombatAIController(ACombatAIController&&) = delete; \
 	ACombatAIController(const ACombatAIController&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~ACombatAIController();
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_14_PROLOG
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_17_GENERATED_BODY \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_14_PROLOG
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class ACombatAIController;
 // ********** End Class ACombatAIController ********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h
+#define CURRENT_FILE_ID FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatAIController_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

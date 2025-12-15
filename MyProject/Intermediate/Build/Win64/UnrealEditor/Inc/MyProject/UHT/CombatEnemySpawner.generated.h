@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
 
 // ********** Begin Class ACombatEnemySpawner ******************************************************
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execDeactivateInteraction); \
 	DECLARE_FUNCTION(execActivateInteraction); \
 	DECLARE_FUNCTION(execToggleInteraction); \
@@ -28,7 +28,7 @@ class AActor;
 
 MYPROJECT_API UClass* Z_Construct_UClass_ACombatEnemySpawner_NoRegister();
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_INCLASS_NO_PURE_DECLS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACombatEnemySpawner(); \
 	friend struct Z_Construct_UClass_ACombatEnemySpawner_Statics; \
@@ -40,7 +40,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<ACombatEnemySpawner*>(this); }
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_ENHANCED_CONSTRUCTORS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ACombatEnemySpawner(ACombatEnemySpawner&&) = delete; \
 	ACombatEnemySpawner(const ACombatEnemySpawner&) = delete; \
@@ -50,13 +50,13 @@ public: \
 	NO_API virtual ~ACombatEnemySpawner();
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_20_PROLOG
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_GENERATED_BODY \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_20_PROLOG
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_INCLASS_NO_PURE_DECLS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_ENHANCED_CONSTRUCTORS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_INCLASS_NO_PURE_DECLS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -66,6 +66,6 @@ class ACombatEnemySpawner;
 // ********** End Class ACombatEnemySpawner ********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h
+#define CURRENT_FILE_ID FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_AI_CombatEnemySpawner_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
