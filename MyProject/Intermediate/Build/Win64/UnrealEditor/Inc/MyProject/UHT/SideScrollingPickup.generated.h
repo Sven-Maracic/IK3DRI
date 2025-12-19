@@ -19,14 +19,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
 
 // ********** Begin Class ASideScrollingPickup *****************************************************
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execBeginOverlap);
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_CALLBACK_WRAPPERS
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_CALLBACK_WRAPPERS
 MYPROJECT_API UClass* Z_Construct_UClass_ASideScrollingPickup_NoRegister();
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_INCLASS_NO_PURE_DECLS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASideScrollingPickup(); \
 	friend struct Z_Construct_UClass_ASideScrollingPickup_Statics; \
@@ -37,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(ASideScrollingPickup)
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_ENHANCED_CONSTRUCTORS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ASideScrollingPickup(ASideScrollingPickup&&) = delete; \
 	ASideScrollingPickup(const ASideScrollingPickup&) = delete; \
@@ -47,14 +47,14 @@ public: \
 	NO_API virtual ~ASideScrollingPickup();
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_15_PROLOG
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_GENERATED_BODY \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_15_PROLOG
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_CALLBACK_WRAPPERS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_INCLASS_NO_PURE_DECLS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_ENHANCED_CONSTRUCTORS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_CALLBACK_WRAPPERS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_INCLASS_NO_PURE_DECLS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -64,6 +64,6 @@ class ASideScrollingPickup;
 // ********** End Class ASideScrollingPickup *******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h
+#define CURRENT_FILE_ID FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Gameplay_SideScrollingPickup_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

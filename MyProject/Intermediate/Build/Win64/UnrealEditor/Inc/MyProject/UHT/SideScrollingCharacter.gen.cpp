@@ -632,14 +632,14 @@ ASideScrollingCharacter::~ASideScrollingCharacter() {}
 // ********** End Class ASideScrollingCharacter ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MyProject_Statics
+struct Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ASideScrollingCharacter, ASideScrollingCharacter::StaticClass, TEXT("ASideScrollingCharacter"), &Z_Registration_Info_UClass_ASideScrollingCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASideScrollingCharacter), 2267760848U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MyProject_3765161948(TEXT("/Script/MyProject"),
-	Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MyProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MyProject_3765161948(TEXT("/Script/MyProject"),
+	Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_SideScrollingCharacter_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
