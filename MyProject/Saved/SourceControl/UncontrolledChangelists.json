@@ -5,6 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Platformer/IK3DRI/MyProject/Content/Interfaces/BPI_CanTouch.uasset",
+				"C:/Platformer/IK3DRI/MyProject/Content/OnTouchObjects/OnTouchTriggerers/BP_Coin.uasset",
+				"C:/Platformer/IK3DRI/MyProject/Content/OnTouchObjects/OnTouchTriggerers/BP_JumpPad.uasset",
+				"C:/Platformer/IK3DRI/MyProject/Content/OnTouchObjects/BP_OnTouchEffectBase.uasset",
+				"C:/Platformer/IK3DRI/MyProject/Content/OnTouchObjects/OnTouchTriggerers/BP_Hole.uasset",
 				"C:/Users/adria/Documents/Fax/Unreal/Grupni/IK3DRI/MyProject/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/RI/R8L7GQXCHQGMMKBPTBJTNA.uasset",
 				"C:/Users/adria/Documents/Fax/Unreal/Grupni/IK3DRI/MyProject/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/QM/8EDJ83O70SH7Q115XSKU2I.uasset",
 				"C:/Users/adria/Documents/Fax/Unreal/Grupni/IK3DRI/MyProject/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/P5/XCOG3N7LH8ZK4T3GURCSDD.uasset",
