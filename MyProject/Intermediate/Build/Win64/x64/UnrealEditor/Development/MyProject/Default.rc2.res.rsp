@@ -87,5 +87,5 @@
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_NAME="Third Person Game Template"
 /DPROJECT_PRODUCT_IDENTIFIER=MyProject
-/fo "C:/Platformer/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/Default.rc2.res"
+/fo "C:/Users/adria/Documents/Fax/Unreal/Grupni/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/Default.rc2.res"
 "../Build/Windows/Resources/Default.rc2"

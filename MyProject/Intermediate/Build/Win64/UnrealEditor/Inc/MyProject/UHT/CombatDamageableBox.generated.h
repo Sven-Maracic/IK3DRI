@@ -17,10 +17,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class ACombatDamageableBox *****************************************************
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_CALLBACK_WRAPPERS
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_CALLBACK_WRAPPERS
 MYPROJECT_API UClass* Z_Construct_UClass_ACombatDamageableBox_NoRegister();
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACombatDamageableBox(); \
 	friend struct Z_Construct_UClass_ACombatDamageableBox_Statics; \
@@ -32,7 +32,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<ACombatDamageableBox*>(this); }
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ACombatDamageableBox(ACombatDamageableBox&&) = delete; \
 	ACombatDamageableBox(const ACombatDamageableBox&) = delete; \
@@ -42,13 +42,13 @@ public: \
 	NO_API virtual ~ACombatDamageableBox();
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_13_PROLOG
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_GENERATED_BODY \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_13_PROLOG
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_CALLBACK_WRAPPERS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_CALLBACK_WRAPPERS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -58,6 +58,6 @@ class ACombatDamageableBox;
 // ********** End Class ACombatDamageableBox *******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h
+#define CURRENT_FILE_ID FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatDamageableBox_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Platformer\\IK3DRI\\MyProject\\Source\\MyProject\\MyProject.Build.cs",
-		"C:\\Platformer\\IK3DRI\\MyProject\\Source\\MyProject.Target.cs",
-		"C:\\Platformer\\IK3DRI\\MyProject\\Source\\MyProjectEditor.Target.cs"
+		"C:\\Users\\adria\\Documents\\Fax\\Unreal\\Grupni\\IK3DRI\\MyProject\\Source\\MyProject\\MyProject.Build.cs",
+		"C:\\Users\\adria\\Documents\\Fax\\Unreal\\Grupni\\IK3DRI\\MyProject\\Source\\MyProject.Target.cs",
+		"C:\\Users\\adria\\Documents\\Fax\\Unreal\\Grupni\\IK3DRI\\MyProject\\Source\\MyProjectEditor.Target.cs"
 	],
 	"EngineVersion": "5.6.1"
 }

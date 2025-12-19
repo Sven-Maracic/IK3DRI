@@ -19,13 +19,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
 
 // ********** Begin Interface USideScrollingInteractable *******************************************
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execInteraction);
 
 
 MYPROJECT_API UClass* Z_Construct_UClass_USideScrollingInteractable_NoRegister();
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	MYPROJECT_API USideScrollingInteractable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -37,7 +37,7 @@ MYPROJECT_API UClass* Z_Construct_UClass_USideScrollingInteractable_NoRegister()
 	virtual ~USideScrollingInteractable() = default;
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_GENERATED_UINTERFACE_BODY() \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUSideScrollingInteractable(); \
 	friend struct Z_Construct_UClass_USideScrollingInteractable_Statics; \
@@ -48,15 +48,15 @@ public: \
 	DECLARE_SERIALIZER(USideScrollingInteractable)
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_GENERATED_BODY \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_GENERATED_UINTERFACE_BODY() \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_GENERATED_UINTERFACE_BODY() \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~ISideScrollingInteractable() {} \
 public: \
@@ -65,12 +65,12 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_12_PROLOG
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_23_GENERATED_BODY \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_12_PROLOG
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h_15_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -80,6 +80,6 @@ class USideScrollingInteractable;
 // ********** End Interface USideScrollingInteractable *********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h
+#define CURRENT_FILE_ID FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

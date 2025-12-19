@@ -21,13 +21,13 @@ class UPrimitiveComponent;
 struct FHitResult;
 
 // ********** Begin Class ACombatCheckpointVolume **************************************************
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnOverlap);
 
 
 MYPROJECT_API UClass* Z_Construct_UClass_ACombatCheckpointVolume_NoRegister();
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACombatCheckpointVolume(); \
 	friend struct Z_Construct_UClass_ACombatCheckpointVolume_Statics; \
@@ -38,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(ACombatCheckpointVolume)
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ACombatCheckpointVolume(ACombatCheckpointVolume&&) = delete; \
 	ACombatCheckpointVolume(const ACombatCheckpointVolume&) = delete; \
@@ -48,13 +48,13 @@ public: \
 	NO_API virtual ~ACombatCheckpointVolume();
 
 
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_10_PROLOG
-#define FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_GENERATED_BODY \
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_10_PROLOG
+#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_INCLASS_NO_PURE_DECLS \
-	FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_ENHANCED_CONSTRUCTORS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_INCLASS_NO_PURE_DECLS \
+	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -64,6 +64,6 @@ class ACombatCheckpointVolume;
 // ********** End Class ACombatCheckpointVolume ****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h
+#define CURRENT_FILE_ID FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatCheckpointVolume_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

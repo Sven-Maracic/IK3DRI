@@ -180,14 +180,14 @@ ASideScrollingNPC::~ASideScrollingNPC() {}
 // ********** End Class ASideScrollingNPC **********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MyProject_Statics
+struct Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ASideScrollingNPC, ASideScrollingNPC::StaticClass, TEXT("ASideScrollingNPC"), &Z_Registration_Info_UClass_ASideScrollingNPC, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASideScrollingNPC), 3948573189U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MyProject_1923687707(TEXT("/Script/MyProject"),
-	Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MyProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MyProject_1923687707(TEXT("/Script/MyProject"),
+	Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
