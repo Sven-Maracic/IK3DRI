@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class ASideScrollingNPC ********************************************************
 MYPROJECT_API UClass* Z_Construct_UClass_ASideScrollingNPC_NoRegister();
 
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_18_INCLASS_NO_PURE_DECLS \
+#define FID_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASideScrollingNPC(); \
 	friend struct Z_Construct_UClass_ASideScrollingNPC_Statics; \
@@ -31,7 +31,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<ASideScrollingNPC*>(this); }
 
 
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_18_ENHANCED_CONSTRUCTORS \
+#define FID_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_18_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ASideScrollingNPC(ASideScrollingNPC&&) = delete; \
 	ASideScrollingNPC(const ASideScrollingNPC&) = delete; \
@@ -41,12 +41,12 @@ public: \
 	NO_API virtual ~ASideScrollingNPC();
 
 
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_15_PROLOG
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_18_GENERATED_BODY \
+#define FID_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_15_PROLOG
+#define FID_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_18_INCLASS_NO_PURE_DECLS \
-	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_18_ENHANCED_CONSTRUCTORS \
+	FID_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_18_INCLASS_NO_PURE_DECLS \
+	FID_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,6 +56,6 @@ class ASideScrollingNPC;
 // ********** End Class ASideScrollingNPC **********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h
+#define CURRENT_FILE_ID FID_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingNPC_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -21,13 +21,13 @@ class UPrimitiveComponent;
 struct FHitResult;
 
 // ********** Begin Class ACombatActivationVolume **************************************************
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnOverlap);
 
 
 MYPROJECT_API UClass* Z_Construct_UClass_ACombatActivationVolume_NoRegister();
 
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACombatActivationVolume(); \
 	friend struct Z_Construct_UClass_ACombatActivationVolume_Statics; \
@@ -38,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(ACombatActivationVolume)
 
 
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ACombatActivationVolume(ACombatActivationVolume&&) = delete; \
 	ACombatActivationVolume(const ACombatActivationVolume&) = delete; \
@@ -48,13 +48,13 @@ public: \
 	NO_API virtual ~ACombatActivationVolume();
 
 
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_14_PROLOG
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_GENERATED_BODY \
+#define FID_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_14_PROLOG
+#define FID_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_ENHANCED_CONSTRUCTORS \
+	FID_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_INCLASS_NO_PURE_DECLS \
+	FID_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -64,6 +64,6 @@ class ACombatActivationVolume;
 // ********** End Class ACombatActivationVolume ****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h
+#define CURRENT_FILE_ID FID_MyProject_Source_MyProject_Variant_Combat_Gameplay_CombatActivationVolume_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

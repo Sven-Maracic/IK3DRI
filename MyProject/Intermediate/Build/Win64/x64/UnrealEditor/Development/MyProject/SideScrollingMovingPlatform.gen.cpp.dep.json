@@ -1,15 +1,15 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\platformer\\ik3dri\\myproject\\intermediate\\build\\win64\\unrealeditor\\inc\\myproject\\uht\\sidescrollingmovingplatform.gen.cpp",
+        "Source": "d:\\program files (x86)\\development\\projects\\unreal\\ik3dri\\myproject\\intermediate\\build\\win64\\unrealeditor\\inc\\myproject\\uht\\sidescrollingmovingplatform.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\platformer\\ik3dri\\myproject\\intermediate\\build\\win64\\x64\\myprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "PCH": "d:\\program files (x86)\\development\\projects\\unreal\\ik3dri\\myproject\\intermediate\\build\\win64\\x64\\myprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
         "Includes": [
-            "c:\\platformer\\ik3dri\\myproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\myproject\\definitions.myproject.h",
-            "c:\\platformer\\ik3dri\\myproject\\source\\myproject\\variant_sidescrolling\\gameplay\\sidescrollingmovingplatform.h",
-            "c:\\platformer\\ik3dri\\myproject\\source\\myproject\\variant_sidescrolling\\interfaces\\sidescrollinginteractable.h",
-            "c:\\platformer\\ik3dri\\myproject\\intermediate\\build\\win64\\unrealeditor\\inc\\myproject\\uht\\sidescrollinginteractable.generated.h",
-            "c:\\platformer\\ik3dri\\myproject\\intermediate\\build\\win64\\unrealeditor\\inc\\myproject\\uht\\sidescrollingmovingplatform.generated.h"
+            "d:\\program files (x86)\\development\\projects\\unreal\\ik3dri\\myproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\myproject\\definitions.myproject.h",
+            "d:\\program files (x86)\\development\\projects\\unreal\\ik3dri\\myproject\\source\\myproject\\variant_sidescrolling\\gameplay\\sidescrollingmovingplatform.h",
+            "d:\\program files (x86)\\development\\projects\\unreal\\ik3dri\\myproject\\source\\myproject\\variant_sidescrolling\\interfaces\\sidescrollinginteractable.h",
+            "d:\\program files (x86)\\development\\projects\\unreal\\ik3dri\\myproject\\intermediate\\build\\win64\\unrealeditor\\inc\\myproject\\uht\\sidescrollinginteractable.generated.h",
+            "d:\\program files (x86)\\development\\projects\\unreal\\ik3dri\\myproject\\intermediate\\build\\win64\\unrealeditor\\inc\\myproject\\uht\\sidescrollingmovingplatform.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

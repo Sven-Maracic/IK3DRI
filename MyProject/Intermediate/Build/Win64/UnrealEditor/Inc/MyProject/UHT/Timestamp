@@ -1,40 +1,46 @@
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\MyProjectCharacter.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\MyProjectPlayerController.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\MyProjectGameMode.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\CombatPlayerController.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\AI\CombatAIController.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\AI\CombatEnemy.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\AI\CombatEnemySpawner.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\AI\CombatStateTreeUtility.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Animation\AnimNotify_DoAttackTrace.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Animation\AnimNotify_CheckCombo.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Gameplay\CombatActivationVolume.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Gameplay\CombatDamageableBox.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Gameplay\CombatDummy.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Gameplay\CombatLavaFloor.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Interfaces\CombatActivatable.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\CombatGameMode.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Interfaces\CombatAttacker.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Interfaces\CombatDamageable.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\UI\CombatLifeBar.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\AI\EnvQueryContext_Player.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Platforming\PlatformingGameMode.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Platforming\PlatformingCharacter.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Platforming\Animation\AnimNotify_EndDash.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Platforming\PlatformingPlayerController.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\SideScrollingCameraManager.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\SideScrollingCharacter.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\SideScrollingGameMode.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\SideScrollingPlayerController.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\AI\SideScrollingAIController.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\AI\SideScrollingNPC.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\Gameplay\SideScrollingPickup.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\Interfaces\SideScrollingInteractable.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\UI\SideScrollingUI.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Gameplay\CombatCheckpointVolume.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.h
-C:\Users\adria\Documents\Fax\Unreal\Grupni\IK3DRI\MyProject\Source\MyProject\Variant_Combat\CombatCharacter.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\MyProjectGameMode.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\MyProjectCharacter.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Enemy\Task\BTTask_FindRandomLocation.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\AI\CombatAIController.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Enemy\AIC_Base.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\CombatCharacter.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\AI\CombatEnemySpawner.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Enemy\BP_Enemy.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\UI\CombatLifeBar.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Platforming\PlatformingGameMode.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\AI\EnvQueryContext_Player.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\MyProjectPlayerController.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Platforming\PlatformingCharacter.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Animation\AnimNotify_CheckCombo.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Platforming\Animation\AnimNotify_EndDash.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Gameplay\CombatDamageableBox.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Interfaces\CombatAttacker.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Gameplay\CombatLavaFloor.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\SideScrollingCameraManager.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\SideScrollingPlayerController.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\Gameplay\SideScrollingPickup.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\UI\SideScrollingUI.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Interfaces\CombatDamageable.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\AI\SideScrollingNPC.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\Interfaces\SideScrollingInteractable.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\AI\CombatEnemy.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Platforming\PlatformingPlayerController.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\SideScrollingCharacter.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Enemy\EnemyGround\AIC_EnemyGround.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Enemy\EnemyGround\BP_EnemySlime.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\CombatGameMode.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\AI\CombatStateTreeUtility.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Enemy\EnemyGround\BP_EnemyGround.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Gameplay\CombatCheckpointVolume.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Animation\AnimNotify_DoAttackTrace.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Gameplay\CombatActivationVolume.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\CombatPlayerController.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Gameplay\CombatDummy.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\SideScrollingGameMode.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\AI\SideScrollingAIController.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_Combat\Interfaces\CombatActivatable.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.h
+D:\Program Files (x86)\Development\Projects\Unreal\IK3DRI\MyProject\Source\MyProject\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.h
