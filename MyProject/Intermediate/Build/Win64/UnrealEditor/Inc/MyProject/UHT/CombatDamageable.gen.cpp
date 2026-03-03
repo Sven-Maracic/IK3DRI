@@ -273,14 +273,14 @@ DEFINE_VTABLE_PTR_HELPER_CTOR(UCombatDamageable);
 // ********** End Interface UCombatDamageable ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Interfaces_CombatDamageable_h__Script_MyProject_Statics
+struct Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Combat_Interfaces_CombatDamageable_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UCombatDamageable, UCombatDamageable::StaticClass, TEXT("UCombatDamageable"), &Z_Registration_Info_UClass_UCombatDamageable, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCombatDamageable), 776325934U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Interfaces_CombatDamageable_h__Script_MyProject_101403227(TEXT("/Script/MyProject"),
-	Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Interfaces_CombatDamageable_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_Interfaces_CombatDamageable_h__Script_MyProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Combat_Interfaces_CombatDamageable_h__Script_MyProject_101403227(TEXT("/Script/MyProject"),
+	Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Combat_Interfaces_CombatDamageable_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Combat_Interfaces_CombatDamageable_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

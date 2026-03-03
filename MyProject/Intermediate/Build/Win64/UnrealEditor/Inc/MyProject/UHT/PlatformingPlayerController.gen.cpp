@@ -230,14 +230,14 @@ APlatformingPlayerController::~APlatformingPlayerController() {}
 // ********** End Class APlatformingPlayerController ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Platforming_PlatformingPlayerController_h__Script_MyProject_Statics
+struct Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Platforming_PlatformingPlayerController_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_APlatformingPlayerController, APlatformingPlayerController::StaticClass, TEXT("APlatformingPlayerController"), &Z_Registration_Info_UClass_APlatformingPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlatformingPlayerController), 4082451309U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Platforming_PlatformingPlayerController_h__Script_MyProject_1534613309(TEXT("/Script/MyProject"),
-	Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Platforming_PlatformingPlayerController_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Platforming_PlatformingPlayerController_h__Script_MyProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Platforming_PlatformingPlayerController_h__Script_MyProject_1534613309(TEXT("/Script/MyProject"),
+	Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Platforming_PlatformingPlayerController_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Platforming_PlatformingPlayerController_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

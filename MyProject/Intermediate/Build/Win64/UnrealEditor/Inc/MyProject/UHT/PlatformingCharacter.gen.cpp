@@ -715,14 +715,14 @@ APlatformingCharacter::~APlatformingCharacter() {}
 // ********** End Class APlatformingCharacter ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Platforming_PlatformingCharacter_h__Script_MyProject_Statics
+struct Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Platforming_PlatformingCharacter_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_APlatformingCharacter, APlatformingCharacter::StaticClass, TEXT("APlatformingCharacter"), &Z_Registration_Info_UClass_APlatformingCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlatformingCharacter), 1519105135U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Platforming_PlatformingCharacter_h__Script_MyProject_2106961101(TEXT("/Script/MyProject"),
-	Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Platforming_PlatformingCharacter_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Platforming_PlatformingCharacter_h__Script_MyProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Platforming_PlatformingCharacter_h__Script_MyProject_2106961101(TEXT("/Script/MyProject"),
+	Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Platforming_PlatformingCharacter_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_Platforming_PlatformingCharacter_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

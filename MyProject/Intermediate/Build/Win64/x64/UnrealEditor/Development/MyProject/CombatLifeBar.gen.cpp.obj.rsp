@@ -1,13 +1,12 @@
-"C:/Platformer/IK3DRI/MyProject/Intermediate/Build/Win64/UnrealEditor/Inc/MyProject/UHT/CombatLifeBar.gen.cpp"
-@"C:/Platformer/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/MyProject.Shared.rsp"
-/FI"C:/Platformer/IK3DRI/MyProject/Intermediate/Build/Win64/x64/MyProjectEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
-/FI"C:/Platformer/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/Definitions.MyProject.h"
-/Yu"C:/Platformer/IK3DRI/MyProject/Intermediate/Build/Win64/x64/MyProjectEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
-/Fp"C:/Platformer/IK3DRI/MyProject/Intermediate/Build/Win64/x64/MyProjectEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
-/Fo"C:/Platformer/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/CombatLifeBar.gen.cpp.obj"
-/experimental:log "C:/Platformer/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/CombatLifeBar.gen.cpp.sarif"
-/sourceDependencies "C:/Platformer/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/CombatLifeBar.gen.cpp.dep.json"
-/d2ssa-cfg-question-
+"D:/Program Files (x86)/Development/Projects/Unreal/IK3DRI/MyProject/Intermediate/Build/Win64/UnrealEditor/Inc/MyProject/UHT/CombatLifeBar.gen.cpp"
+@"D:/Program Files (x86)/Development/Projects/Unreal/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/MyProject.Shared.rsp"
+/FI"D:/Program Files (x86)/Development/Projects/Unreal/IK3DRI/MyProject/Intermediate/Build/Win64/x64/MyProjectEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/FI"D:/Program Files (x86)/Development/Projects/Unreal/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/Definitions.MyProject.h"
+/Yu"D:/Program Files (x86)/Development/Projects/Unreal/IK3DRI/MyProject/Intermediate/Build/Win64/x64/MyProjectEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/Fp"D:/Program Files (x86)/Development/Projects/Unreal/IK3DRI/MyProject/Intermediate/Build/Win64/x64/MyProjectEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
+/Fo"D:/Program Files (x86)/Development/Projects/Unreal/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/CombatLifeBar.gen.cpp.obj"
+/experimental:log "D:/Program Files (x86)/Development/Projects/Unreal/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/CombatLifeBar.gen.cpp.sarif"
+/sourceDependencies "D:/Program Files (x86)/Development/Projects/Unreal/IK3DRI/MyProject/Intermediate/Build/Win64/x64/UnrealEditor/Development/MyProject/CombatLifeBar.gen.cpp.dep.json"
 /Zc:inline
 /nologo
 /Oi

@@ -19,10 +19,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct FLinearColor;
 
 // ********** Begin Class UCombatLifeBar ***********************************************************
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_CALLBACK_WRAPPERS
+#define FID_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_CALLBACK_WRAPPERS
 MYPROJECT_API UClass* Z_Construct_UClass_UCombatLifeBar_NoRegister();
 
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUCombatLifeBar(); \
 	friend struct Z_Construct_UClass_UCombatLifeBar_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(UCombatLifeBar)
 
 
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UCombatLifeBar(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -45,13 +45,13 @@ public: \
 	NO_API virtual ~UCombatLifeBar();
 
 
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_12_PROLOG
-#define FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_GENERATED_BODY \
+#define FID_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_12_PROLOG
+#define FID_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_CALLBACK_WRAPPERS \
-	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_ENHANCED_CONSTRUCTORS \
+	FID_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_CALLBACK_WRAPPERS \
+	FID_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_INCLASS_NO_PURE_DECLS \
+	FID_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -61,6 +61,6 @@ class UCombatLifeBar;
 // ********** End Class UCombatLifeBar *************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h
+#define CURRENT_FILE_ID FID_MyProject_Source_MyProject_Variant_Combat_UI_CombatLifeBar_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

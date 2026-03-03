@@ -125,14 +125,14 @@ ASideScrollingAIController::~ASideScrollingAIController() {}
 // ********** End Class ASideScrollingAIController *************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingAIController_h__Script_MyProject_Statics
+struct Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingAIController_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ASideScrollingAIController, ASideScrollingAIController::StaticClass, TEXT("ASideScrollingAIController"), &Z_Registration_Info_UClass_ASideScrollingAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASideScrollingAIController), 3529693919U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingAIController_h__Script_MyProject_3915564169(TEXT("/Script/MyProject"),
-	Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingAIController_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_adria_Documents_Fax_Unreal_Grupni_IK3DRI_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingAIController_h__Script_MyProject_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingAIController_h__Script_MyProject_3915564169(TEXT("/Script/MyProject"),
+	Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingAIController_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MyProject_Source_MyProject_Variant_SideScrolling_AI_SideScrollingAIController_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
