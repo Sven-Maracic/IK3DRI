@@ -81,3 +81,7 @@ Content/_LocalFiles/*
 # ignore all _ files and _ folders
 _*
 _*
+/MyProject/Saved
+/MyProject/Binaries
+/MyProject/Intermediate
+/MyProject/.idea
