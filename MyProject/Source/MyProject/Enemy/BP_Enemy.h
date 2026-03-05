@@ -7,6 +7,17 @@
 #include "GameFramework/Character.h"
 #include "BP_Enemy.generated.h"
 
+
+UENUM(BlueprintType)
+enum EEnemyStates
+{
+	Idle,		//0
+	Patrolling,	//1
+	Aggro,		//2
+	Stunned,	//3
+	Dead		//4
+};
+
 UCLASS()
 class MYPROJECT_API ABP_Enemy : public ACharacter
 {
@@ -16,17 +27,9 @@ public:
 	// Sets default values for this character's properties
 	ABP_Enemy();
 
-	enum EEnemyStates
-	{
-		Idle,
-		Patrolling,
-		Aggro,
-		Stunned,
-		Dead
-	};
+	
 
 protected:
-	// Called when the game starts or when spawned
 	EEnemyStates CurrentState = Idle;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="AI")
@@ -37,6 +40,9 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
-	// Called every frame
 	UBehaviorTree* GetBehaviourTree() const;
+	UFUNCTION(BlueprintCallable, Category="State")
+	void ChangeState(EEnemyStates state);
+	UFUNCTION(BlueprintCallable, Category="State")
+	EEnemyStates GetState();
 };
