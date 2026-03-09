@@ -12,5 +12,5 @@ EBTNodeResult::Type UBTTaskDebug_Print::ExecuteTask(UBehaviorTreeComponent& Owne
 
 UBTTaskDebug_Print::UBTTaskDebug_Print()
 {
-	NodeName = "DEBUG: Print";
+	NodeName = TEXT("DEBUG: Print");
 }

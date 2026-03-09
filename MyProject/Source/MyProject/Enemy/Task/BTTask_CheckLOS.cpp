@@ -11,27 +11,27 @@
 
 UBTTask_CheckLOS::UBTTask_CheckLOS()
 {
-	NodeName = "Check line-of-sight for player pawn";
+	NodeName = TEXT("Check line-of-sight for player pawn");
 }
 
 EBTNodeResult::Type UBTTask_CheckLOS::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
-	ABP_Enemy* owner = Cast<ABP_Enemy>(OwnerComp.GetAIOwner()->GetPawn());
-	FVector startPos = owner->GetActorLocation() + OriginOffset;
-	FRotator direction = owner->GetActorForwardVector().Rotation();
+	ABP_Enemy* enemyOwner = Cast<ABP_Enemy>(OwnerComp.GetAIOwner()->GetPawn());
+	FVector startPos = enemyOwner->GetActorLocation() + OriginOffset;
+	FRotator direction = enemyOwner->GetActorForwardVector().Rotation();
 	APawn* playerPawn = GetWorld()->GetFirstPlayerController()->GetPawn();
 	
 	//trace
 	TArray<FHitResult> hits;
 	if (playerPawn != nullptr)	//only check LOS if player actually exists (isnt spectator pawn)
 	{
-		if (UBFL_ConeCheck::ConeTraceMulti(owner, startPos, direction, TraceLength, TraceRadius, TraceTypeQuery1, owner, EDrawDebugTrace::ForOneFrame, hits, FLinearColor::Red, FLinearColor::Green, DrawTime))
+		if (UBFL_ConeCheck::ConeTraceMulti(enemyOwner, startPos, direction, TraceLength, TraceRadius, TraceTypeQuery1, enemyOwner, EDrawDebugTrace::ForOneFrame, hits, FLinearColor::Red, FLinearColor::Green, DrawTime))
 		{
 			for (auto currHit : hits)
 			{
 				if (currHit.GetActor() == playerPawn)
 				{
-					owner->ChangeState(EEnemyStates::Aggro);
+					enemyOwner->ChangeState(EEnemyStates::Aggro);
 					OwnerComp.GetBlackboardComponent()->SetValueAsInt("CurrentState", EEnemyStates::Aggro);
 					return EBTNodeResult::Succeeded;
 				}
