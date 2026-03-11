@@ -3,12 +3,16 @@
 
 #include "Enemy/BP_Enemy.h"
 
+#include "BehaviorTree/BlackboardData.h"
+
 // Sets default values
 ABP_Enemy::ABP_Enemy()
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
+
+
 
 void ABP_Enemy::Attack()
 {
@@ -27,4 +31,15 @@ void ABP_Enemy::BeginPlay()
 UBehaviorTree* ABP_Enemy::GetBehaviourTree() const
 {
 	return BehaviorTree;
+}
+
+void ABP_Enemy::ChangeState(EEnemyStates state)
+{
+	UE_LOG(LogActor, Display, TEXT("Changed state from %d to %d"), CurrentState, state);
+	CurrentState = state;
+}
+
+EEnemyStates ABP_Enemy::GetState()
+{
+	return CurrentState;
 }
