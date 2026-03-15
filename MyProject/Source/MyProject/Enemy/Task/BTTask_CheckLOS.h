@@ -4,7 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "BehaviorTree/Tasks/BTTask_BlackboardBase.h"
-#include "Kismet/KismetSystemLibrary.h"
+#include "Enemy/BP_Enemy.h"
+
 
 #include "BTTask_CheckLOS.generated.h"
 
@@ -18,6 +19,7 @@ class MYPROJECT_API UBTTask_CheckLOS : public UBTTask_BlackboardBase
 	
 public:
 	explicit UBTTask_CheckLOS();
+	void UpdateObjects(const UBehaviorTreeComponent& OwnerComp);
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS")
@@ -26,4 +28,9 @@ public:
 	float TraceLength = 100.0f, TraceRadius = 30;
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS-Debug")
 	float DrawTime;
+	
+	ABP_Enemy* EnemyOwner;
+	FVector StartPos;
+	FRotator Direction;
+	APawn* PlayerPawn;
 };
