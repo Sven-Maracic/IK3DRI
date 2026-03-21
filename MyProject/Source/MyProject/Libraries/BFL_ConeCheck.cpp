@@ -6,12 +6,11 @@
 
 //code adapted from GitHub, original GitHub guide -> https://sreitich.github.io/cone-trace/
 bool UBFL_ConeCheck::ConeTraceMulti(const UObject* WorldContextObject, const FVector Start, const FRotator Direction,
-	float ConeHeight, float ConeHalfAngle, ETraceTypeQuery TraceChannel,
+	float ConeHeight, float ConeHalfAngle, ECollisionChannel CollisionChannel,
 	AActor* IgnoreActor, EDrawDebugTrace::Type DrawDebugType, TArray<FHitResult>& OutHits, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime)
 {
 	OutHits.Reset();
-
-	ECollisionChannel CollisionChannel = UEngineTypes::ConvertToCollisionChannel(TraceChannel);
+	
 	FCollisionQueryParams Params(SCENE_QUERY_STAT(ConeTraceMulti));
 	Params.bReturnPhysicalMaterial = true;
 	TArray<AActor*> ActorsToIgnore = {IgnoreActor};
@@ -36,6 +35,11 @@ bool UBFL_ConeCheck::ConeTraceMulti(const UObject* WorldContextObject, const FVe
 	// Filter for hits that would be inside the cone.
 	for (FHitResult& HitResult : TempHitResults)
 	{
+		if (HitResult.bBlockingHit)
+		{
+			break;
+		}
+		
 		const FVector HitDirection = (HitResult.ImpactPoint - Start).GetSafeNormal();
 		const double Dot = FVector::DotProduct(Direction.Vector(), HitDirection);
 		// theta = arccos((A • B) / (|A|*|B|)). |A|*|B| = 1 because A and B are unit vectors.

@@ -20,6 +20,7 @@ void UBTTask_CheckLOS::UpdateObjects(const UBehaviorTreeComponent& OwnerComp)
 	StartPos = EnemyOwner->GetActorLocation() + OriginOffset;
 	Direction = EnemyOwner->GetActorForwardVector().Rotation();
 	PlayerPawn = GetWorld()->GetFirstPlayerController()->GetPawn();
+	TraceLength = TraceLengthKey.GetValue(OwnerComp);
 }
 
 EBTNodeResult::Type UBTTask_CheckLOS::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
@@ -30,7 +31,7 @@ EBTNodeResult::Type UBTTask_CheckLOS::ExecuteTask(UBehaviorTreeComponent& OwnerC
 	TArray<FHitResult> hits;
 	if (PlayerPawn != nullptr)	//only check LOS if player actually exists (isnt spectator pawn)
 	{
-		if (UBFL_ConeCheck::ConeTraceMulti(EnemyOwner, StartPos, Direction, TraceLength, TraceRadius, TraceTypeQuery1, EnemyOwner, EDrawDebugTrace::ForOneFrame, hits, FLinearColor::Red, FLinearColor::Green, DrawTime))
+		if (UBFL_ConeCheck::ConeTraceMulti(EnemyOwner, StartPos, Direction, TraceLength, TraceRadius, ECC_Visibility, EnemyOwner, EDrawDebugTrace::ForOneFrame, hits, FLinearColor::Red, FLinearColor::Green, DrawTime))
 		{
 			for (auto currHit : hits)
 			{

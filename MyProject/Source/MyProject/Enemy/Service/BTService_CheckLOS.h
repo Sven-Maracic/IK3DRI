@@ -4,33 +4,36 @@
 
 #include "CoreMinimal.h"
 #include "BehaviorTree/ValueOrBBKey.h"
-#include "BehaviorTree/Tasks/BTTask_BlackboardBase.h"
+#include "BehaviorTree/Services/BTService_BlackboardBase.h"
 #include "Enemy/BP_Enemy.h"
-
-
-#include "BTTask_CheckLOS.generated.h"
+#include "BTService_CheckLOS.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class MYPROJECT_API UBTTask_CheckLOS : public UBTTask_BlackboardBase
+class MYPROJECT_API UBTService_CheckLOS : public UBTService_BlackboardBase
 {
 	GENERATED_BODY()
-	
-public:
-	explicit UBTTask_CheckLOS();
+
+protected:
 	void UpdateObjects(const UBehaviorTreeComponent& OwnerComp);
-	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
-	
+	virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
+
+public:
+	UBTService_CheckLOS();
+	virtual void InitializeFromAsset(UBehaviorTree& Asset) override;
+
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS")
 	FVector OriginOffset = FVector(0.0f, 0.0f, 0.0f);
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS")
 	FValueOrBBKey_Float TraceLengthKey = 600.0f;
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS")
-	float TraceRadius = 30;
+	float TraceRadius = 30.0f;
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS-Debug")
 	float DrawTime;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Blackboard")
+	FBlackboardKeySelector LocationOutput;
 	
 protected:
 	float TraceLength;
