@@ -32,14 +32,3 @@ UBehaviorTree* ABP_Enemy::GetBehaviourTree() const
 {
 	return BehaviorTree;
 }
-
-void ABP_Enemy::ChangeState(EEnemyStates state)
-{
-	UE_LOG(LogActor, Display, TEXT("Changed state from %d to %d"), CurrentState, state);
-	CurrentState = state;
-}
-
-EEnemyStates ABP_Enemy::GetState()
-{
-	return CurrentState;
-}

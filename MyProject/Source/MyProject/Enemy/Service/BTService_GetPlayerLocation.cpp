@@ -16,3 +16,8 @@ void UBTService_GetPlayerLocation::TickNode(UBehaviorTreeComponent& OwnerComp, u
 	OwnerComp.GetBlackboardComponent()->SetValueAsVector("TargetLocation", playerPawn->GetActorLocation());
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 }
+
+UBTService_GetPlayerLocation::UBTService_GetPlayerLocation()
+{
+	NodeName = TEXT("Get Player Location");
+}
