@@ -16,4 +16,6 @@ class MYPROJECT_API UBTService_GetPlayerLocation : public UBTService_BlackboardB
 
 protected:
 	virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
+public:
+	explicit UBTService_GetPlayerLocation();
 };
