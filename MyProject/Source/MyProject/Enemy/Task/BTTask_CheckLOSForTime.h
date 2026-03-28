@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "chrono"
-#include "Enemy/Task/BTTask_CheckLOS.h"
+#include "BehaviorTree/Tasks/BTTask_BlackboardBase.h"
 #include "BTTask_CheckLOSForTime.generated.h"
 
 
@@ -12,7 +12,7 @@
  * 
  */
 UCLASS()
-class MYPROJECT_API UBTTask_CheckLOSForTime : public UBTTask_CheckLOS
+class MYPROJECT_API UBTTask_CheckLOSForTime : public UBTTask_BlackboardBase
 {
 	GENERATED_BODY()
 	

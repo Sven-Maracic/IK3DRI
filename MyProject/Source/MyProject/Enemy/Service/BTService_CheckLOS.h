@@ -30,10 +30,15 @@ public:
 	FValueOrBBKey_Float TraceLengthKey = 600.0f;
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS")
 	float TraceRadius = 30.0f;
-	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS-Debug")
-	float DrawTime;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Blackboard")
 	FBlackboardKeySelector LocationOutput;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Blackboard")
+	FBlackboardKeySelector PlayerDetectedOutput;
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS-Debug")
+	bool IsDebug = false;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS-Debug")
+	float DrawTime;
 	
 protected:
 	float TraceLength;

@@ -5,7 +5,6 @@
 
 #include "AIController.h"
 #include "Enemy/BP_Enemy.h"
-#include "Enemy/Task/BTTask_CheckLOS.h"
 #include "Libraries/BFL_ConeCheck.h"
 
 
@@ -26,7 +25,7 @@ EBTNodeResult::Type UBTTask_CheckLOSForTime::ExecuteTask(UBehaviorTreeComponent&
 
 void UBTTask_CheckLOSForTime::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
 {
-	UpdateObjects(OwnerComp);
+	//UpdateObjects(OwnerComp);
 	TArray<FHitResult> hits;
 	if (std::chrono::high_resolution_clock::now() - startTime > std::chrono::seconds(static_cast<long>(WaitTime)))
 	{
@@ -34,7 +33,7 @@ void UBTTask_CheckLOSForTime::TickTask(UBehaviorTreeComponent& OwnerComp, uint8*
 		
 		FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
 		return;
-	}
+	}/*
 	else if (UBFL_ConeCheck::ConeTraceMulti(EnemyOwner, StartPos, Direction, TraceLength, TraceRadius, ECC_Visibility, EnemyOwner, EDrawDebugTrace::ForOneFrame, hits, FLinearColor::Red, FLinearColor::Green, DrawTime))
 	{
 		UE_LOG(LogTemp, Error, TEXT("Succ"));
@@ -42,5 +41,5 @@ void UBTTask_CheckLOSForTime::TickTask(UBehaviorTreeComponent& OwnerComp, uint8*
 		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
 		return;
 	}
-	UE_LOG(LogTemp, Error, TEXT("Prog"));
+	UE_LOG(LogTemp, Error, TEXT("Prog"));*/
 }

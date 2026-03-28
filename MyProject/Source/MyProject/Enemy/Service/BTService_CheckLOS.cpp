@@ -18,22 +18,34 @@ void UBTService_CheckLOS::UpdateObjects(const UBehaviorTreeComponent& OwnerComp)
 
 void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
 {
-	UpdateObjects(OwnerComp);
-	TArray<FHitResult> hits;
-	if (PlayerPawn != nullptr)	//only check LOS if player actually exists
+	UpdateObjects(OwnerComp);	
+	
+	FVector playerLocation = PlayerPawn->GetActorLocation();
+	FVector targetVector = playerLocation - StartPos;
+	
+	if (targetVector.Length() <= TraceLength)
 	{
-		if (UBFL_ConeCheck::ConeTraceMulti(EnemyOwner, StartPos, Direction, TraceLength, TraceRadius, ECC_Visibility, EnemyOwner, EDrawDebugTrace::ForOneFrame, hits, FLinearColor::Red, FLinearColor::Green, DrawTime))
+		FHitResult hitResult;
+		float dotProd = FVector::DotProduct(EnemyOwner->GetActorForwardVector(), targetVector.GetSafeNormal());
+		float angleBetween = FMath::RadiansToDegrees(FMath::Acos(FMath::Clamp(dotProd, -1.0f, 1.0f)));
+		if (angleBetween <= 30.0f)
 		{
-			for (auto currHit : hits)
+			if (GetWorld()->LineTraceSingleByChannel(hitResult, StartPos, playerLocation, ECC_Visibility))
 			{
-				if (currHit.GetActor() == PlayerPawn)
+				if (IsDebug) UE_LOG(LogTemp, Display, TEXT("%f"), angleBetween);
+				if (IsDebug) DrawDebugLineTraceSingle(GetWorld(), StartPos, playerLocation, EDrawDebugTrace::ForOneFrame, true, hitResult, FLinearColor::Green, FLinearColor::Red, 0);
+				if (hitResult.GetActor() == PlayerPawn)
 				{
 					OwnerComp.GetBlackboardComponent()->SetValueAsVector(LocationOutput.SelectedKeyName, PlayerPawn->GetActorLocation());
+					OwnerComp.GetBlackboardComponent()->SetValueAsBool(PlayerDetectedOutput.SelectedKeyName, true);
 				}
+				
 			}
+			
+			if (IsDebug) UE_LOG(LogTemp, Log, TEXT("%s hit!"), *hitResult.Component->GetName());
 		}
 	}
-	//return EBTNodeResult::Failed;
+
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 }
 
@@ -49,5 +61,6 @@ void UBTService_CheckLOS::InitializeFromAsset(UBehaviorTree& Asset)
 	if (const UBlackboardData* BBAsset = GetBlackboardAsset())
 	{
 		LocationOutput.ResolveSelectedKey(*BBAsset);
+		PlayerDetectedOutput.ResolveSelectedKey(*BBAsset);
 	}
 }
