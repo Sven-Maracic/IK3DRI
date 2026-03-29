@@ -14,4 +14,6 @@ UCLASS()
 class MYPROJECT_API AAIC_EnemyGround : public AAIC_Base
 {
 	GENERATED_BODY()
+public:
+	virtual void LookAt(FVector TargetLocation);
 };
