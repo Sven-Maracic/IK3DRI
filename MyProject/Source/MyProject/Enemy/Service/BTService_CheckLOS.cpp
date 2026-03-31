@@ -21,27 +21,32 @@ void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 	FVector playerLocation = playerPawn->GetActorLocation();
 	FVector targetVector = playerLocation - startPos;
 	
-	if (targetVector.Length() <= TraceLength.GetValue(OwnerComp))
+	if (IsValid(playerPawn))
 	{
-		FHitResult hitResult;
-		float dotProd = FVector::DotProduct(enemyOwner->GetActorForwardVector(), targetVector.GetSafeNormal());
-		float angleBetween = FMath::RadiansToDegrees(FMath::Acos(FMath::Clamp(dotProd, -1.0f, 1.0f)));
-		if (angleBetween <= LosAngle.GetValue(OwnerComp))
+		if (targetVector.Length() <= TraceLength.GetValue(OwnerComp))
 		{
-			if (GetWorld()->LineTraceSingleByChannel(hitResult, startPos, playerLocation, ECC_Visibility))
+			float dotProd = FVector::DotProduct(enemyOwner->GetActorForwardVector(), targetVector.GetSafeNormal());
+			float angleBetween = FMath::RadiansToDegrees(FMath::Acos(FMath::Clamp(dotProd, -1.0f, 1.0f)));
+			if (angleBetween <= LosAngle.GetValue(OwnerComp))
 			{
-				if (IsDebug) UE_LOG(LogTemp, Display, TEXT("%f"), angleBetween);
-				if (IsDebug) DrawDebugLineTraceSingle(GetWorld(), startPos, playerLocation, EDrawDebugTrace::ForOneFrame, true, hitResult, FLinearColor::Green, FLinearColor::Red, DrawTime);
-				if (hitResult.GetActor() == playerPawn)
+				FHitResult hitResult;
+				if (GetWorld()->LineTraceSingleByChannel(hitResult, startPos, playerLocation, ECC_Visibility))
 				{
-					OwnerComp.GetBlackboardComponent()->SetValueAsVector(LocationOutput.SelectedKeyName, playerPawn->GetActorLocation());
-					OwnerComp.GetBlackboardComponent()->SetValueAsBool(PlayerDetectedOutput.SelectedKeyName, true);
+					if (IsDebug) UE_LOG(LogTemp, Display, TEXT("%f"), angleBetween);
+					if (IsDebug) DrawDebugLineTraceSingle(GetWorld(), startPos, playerLocation, EDrawDebugTrace::ForOneFrame, true, hitResult, FLinearColor::Green, FLinearColor::Red, DrawTime);
+					if (IsDebug) UE_LOG(LogTemp, Log, TEXT("%s hit!"), *hitResult.Component->GetName());
+					if (hitResult.GetActor() == playerPawn)
+					{
+						OwnerComp.GetBlackboardComponent()->SetValueAsVector(LocationOutput.SelectedKeyName, playerPawn->GetActorLocation());
+						OwnerComp.GetBlackboardComponent()->SetValueAsBool(PlayerDetectedOutput.SelectedKeyName, true);
+					}
 				}
-				
 			}
-			
-			if (IsDebug) UE_LOG(LogTemp, Log, TEXT("%s hit!"), *hitResult.Component->GetName());
 		}
+	}
+	else
+	{
+		if (IsDebug) UE_LOG(LogTemp, Error, TEXT("Player Pawn Not Found"));
 	}
 
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
@@ -54,11 +59,10 @@ UBTService_CheckLOS::UBTService_CheckLOS()
 
 void UBTService_CheckLOS::InitializeFromAsset(UBehaviorTree& Asset)
 {
-	Super::InitializeFromAsset(Asset);
-
 	if (const UBlackboardData* BBAsset = GetBlackboardAsset())
 	{
 		LocationOutput.ResolveSelectedKey(*BBAsset);
 		PlayerDetectedOutput.ResolveSelectedKey(*BBAsset);
 	}
+	Super::InitializeFromAsset(Asset);
 }
