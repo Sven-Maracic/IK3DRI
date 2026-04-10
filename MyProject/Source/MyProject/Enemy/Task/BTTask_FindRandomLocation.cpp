@@ -30,7 +30,7 @@ EBTNodeResult::Type UBTTask_FindRandomLocation::ExecuteTask(UBehaviorTreeCompone
 				if (navSys->GetRandomPointInNavigableRadius(origin, SearchRadius, navLocation))
 				{
 					//save random location to blackboard
-					OwnerComp.GetBlackboardComponent()->SetValueAsVector("TargetLocation", navLocation.Location);
+					OwnerComp.GetBlackboardComponent()->SetValueAsVector(OutputLocationKey.SelectedKeyName, navLocation.Location);
 				}
 				//debug, draw where enemy is trying to move to
 				DrawDebugSphere(GetWorld(), navLocation, 10.0f, 32, FColor::Cyan, false, 3, 0, 2.0f);
@@ -39,4 +39,14 @@ EBTNodeResult::Type UBTTask_FindRandomLocation::ExecuteTask(UBehaviorTreeCompone
 		}
 	}
 	return EBTNodeResult::Failed; //if casting failed, return fail
+}
+
+void UBTTask_FindRandomLocation::InitializeFromAsset(UBehaviorTree& Asset)
+{
+	Super::InitializeFromAsset(Asset);
+
+	if (const UBlackboardData* BBAsset = GetBlackboardAsset())
+	{
+		OutputLocationKey.ResolveSelectedKey(*BBAsset);
+	}
 }

@@ -24,21 +24,25 @@ public:
 	UBTService_CheckLOS();
 	virtual void InitializeFromAsset(UBehaviorTree& Asset) override;
 
+public:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS")
-	FVector OriginOffset = FVector(0.0f, 0.0f, 0.0f);
+	FValueOrBBKey_Vector OriginOffset = FVector(0.0f, 0.0f, 0.0f);
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS")
-	FValueOrBBKey_Float TraceLengthKey = 600.0f;
+	FValueOrBBKey_Float TraceLength = 600.0f;
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS")
-	float TraceRadius = 30.0f;
-	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS-Debug")
-	float DrawTime;
+	FValueOrBBKey_Float LosAngle = 30.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Blackboard")
 	FBlackboardKeySelector LocationOutput;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Blackboard")
+	FBlackboardKeySelector PlayerDetectedOutput;
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS Debug")
+	bool IsDebug = false;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="LOS Debug")
+	float DrawTime;
 	
 protected:
-	float TraceLength;
-	ABP_Enemy* EnemyOwner;
-	FVector StartPos;
-	FRotator Direction;
-	APawn* PlayerPawn;
+	ABP_Enemy* enemyOwner;
+	FVector startPos;
+	APawn* playerPawn;
 };

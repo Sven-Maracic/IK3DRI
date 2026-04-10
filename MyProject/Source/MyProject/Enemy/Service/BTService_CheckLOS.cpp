@@ -4,36 +4,51 @@
 #include "Enemy/Service/BTService_CheckLOS.h"
 
 #include "AIController.h"
+#include "KismetTraceUtils.h"
 #include "BehaviorTree/BlackboardComponent.h"
-#include "Libraries/BFL_ConeCheck.h"
 
 void UBTService_CheckLOS::UpdateObjects(const UBehaviorTreeComponent& OwnerComp)
 {
-	EnemyOwner = Cast<ABP_Enemy>(OwnerComp.GetAIOwner()->GetPawn());
-	StartPos = EnemyOwner->GetActorLocation() + OriginOffset;
-	Direction = EnemyOwner->GetActorForwardVector().Rotation();
-	PlayerPawn = GetWorld()->GetFirstPlayerController()->GetPawn();
-	TraceLength = TraceLengthKey.GetValue(OwnerComp);
+	enemyOwner = Cast<ABP_Enemy>(OwnerComp.GetAIOwner()->GetPawn());
+	playerPawn = GetWorld()->GetFirstPlayerController()->GetPawn();
+	startPos = enemyOwner->GetActorLocation() + OriginOffset.GetValue(OwnerComp);
 }
 
 void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
 {
-	UpdateObjects(OwnerComp);
-	TArray<FHitResult> hits;
-	if (PlayerPawn != nullptr)	//only check LOS if player actually exists
+	UpdateObjects(OwnerComp);	
+	
+	FVector playerLocation = playerPawn->GetActorLocation();
+	FVector targetVector = playerLocation - startPos;
+	
+	if (IsValid(playerPawn))
 	{
-		if (UBFL_ConeCheck::ConeTraceMulti(EnemyOwner, StartPos, Direction, TraceLength, TraceRadius, ECC_Visibility, EnemyOwner, EDrawDebugTrace::ForOneFrame, hits, FLinearColor::Red, FLinearColor::Green, DrawTime))
+		if (targetVector.Length() <= TraceLength.GetValue(OwnerComp))
 		{
-			for (auto currHit : hits)
+			float dotProd = FVector::DotProduct(enemyOwner->GetActorForwardVector(), targetVector.GetSafeNormal());
+			float angleBetween = FMath::RadiansToDegrees(FMath::Acos(FMath::Clamp(dotProd, -1.0f, 1.0f)));
+			if (angleBetween <= LosAngle.GetValue(OwnerComp))
 			{
-				if (currHit.GetActor() == PlayerPawn)
+				FHitResult hitResult;
+				if (GetWorld()->LineTraceSingleByChannel(hitResult, startPos, playerLocation, ECC_Visibility))
 				{
-					OwnerComp.GetBlackboardComponent()->SetValueAsVector(LocationOutput.SelectedKeyName, PlayerPawn->GetActorLocation());
+					if (IsDebug) UE_LOG(LogTemp, Display, TEXT("%f"), angleBetween);
+					if (IsDebug) DrawDebugLineTraceSingle(GetWorld(), startPos, playerLocation, EDrawDebugTrace::ForOneFrame, true, hitResult, FLinearColor::Green, FLinearColor::Red, DrawTime);
+					if (IsDebug) UE_LOG(LogTemp, Log, TEXT("%s hit!"), *hitResult.Component->GetName());
+					if (hitResult.GetActor() == playerPawn)
+					{
+						OwnerComp.GetBlackboardComponent()->SetValueAsVector(LocationOutput.SelectedKeyName, playerPawn->GetActorLocation());
+						OwnerComp.GetBlackboardComponent()->SetValueAsBool(PlayerDetectedOutput.SelectedKeyName, true);
+					}
 				}
 			}
 		}
 	}
-	//return EBTNodeResult::Failed;
+	else
+	{
+		if (IsDebug) UE_LOG(LogTemp, Error, TEXT("Player Pawn Not Found"));
+	}
+
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 }
 
@@ -44,10 +59,10 @@ UBTService_CheckLOS::UBTService_CheckLOS()
 
 void UBTService_CheckLOS::InitializeFromAsset(UBehaviorTree& Asset)
 {
-	Super::InitializeFromAsset(Asset);
-
 	if (const UBlackboardData* BBAsset = GetBlackboardAsset())
 	{
 		LocationOutput.ResolveSelectedKey(*BBAsset);
+		PlayerDetectedOutput.ResolveSelectedKey(*BBAsset);
 	}
+	Super::InitializeFromAsset(Asset);
 }
