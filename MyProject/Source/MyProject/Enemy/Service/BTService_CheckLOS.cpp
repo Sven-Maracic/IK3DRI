@@ -58,7 +58,7 @@ void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 	}
 	else
 	{
-		if (IsDebug) UE_LOG(LogTemp, Error, TEXT("Player Pawn Not Found"));
+		UE_LOG(LogTemp, Error, TEXT("BTService_CheckLOS -> Player Pawn Not Found"));
 	}
 
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
@@ -66,7 +66,7 @@ void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 
 UBTService_CheckLOS::UBTService_CheckLOS()
 {
-	NodeName = TEXT("Check line of sight for player");
+	NodeName = TEXT("BTService_CheckLOS -> Check line of sight for player");
 }
 
 void UBTService_CheckLOS::InitializeFromAsset(UBehaviorTree& Asset)
