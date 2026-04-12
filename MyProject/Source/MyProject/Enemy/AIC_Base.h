@@ -16,6 +16,9 @@ class MYPROJECT_API AAIC_Base : public AAIController //ai controller base class
 
 public:
 	AAIC_Base();
+	
+	UFUNCTION(BlueprintCallable)
+	virtual void LookAt(FVector TargetLocation);
 
 protected:
 	virtual void OnPossess(APawn* Pawn) override;

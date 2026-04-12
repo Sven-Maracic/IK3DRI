@@ -12,22 +12,6 @@ ABP_Enemy::ABP_Enemy()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
-
-
-void ABP_Enemy::Attack()
-{
-}
-
-void ABP_Enemy::Move()
-{
-}
-
-// Called when the game starts or when spawned
-void ABP_Enemy::BeginPlay()
-{
-	Super::BeginPlay();
-}
-
 UBehaviorTree* ABP_Enemy::GetBehaviourTree() const
 {
 	return BehaviorTree;
