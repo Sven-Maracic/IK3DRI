@@ -21,7 +21,10 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Blackboard")
 	FBlackboardKeySelector OutputLocationKey;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="AI")
 		float SearchRadius = 2000.0f;
+	
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Debug")
+	bool IsDebug = false;
 };
