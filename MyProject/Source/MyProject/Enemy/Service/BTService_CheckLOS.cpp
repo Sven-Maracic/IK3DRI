@@ -12,7 +12,6 @@ void UBTService_CheckLOS::UpdateObjects(const UBehaviorTreeComponent& OwnerComp)
 	enemyOwner = Cast<ABP_Enemy>(OwnerComp.GetAIOwner()->GetPawn());
 	playerPawn = GetWorld()->GetFirstPlayerController()->GetPawn();
 	startPos = enemyOwner->GetActorLocation() + OriginOffset.GetValue(OwnerComp);
-	traceLength = TraceLength.GetValue(OwnerComp);
 }
 
 void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
@@ -24,7 +23,7 @@ void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 	
 	if (IsValid(playerPawn))
 	{
-		if (targetVector.Length() <= traceLength)
+		if (targetVector.Length() <= TraceLength.GetValue(OwnerComp))
 		{
 			float dotProd = FVector::DotProduct(enemyOwner->GetActorForwardVector(), targetVector.GetSafeNormal());
 			float angleBetween = FMath::RadiansToDegrees(FMath::Acos(FMath::Clamp(dotProd, -1.0f, 1.0f)));
@@ -33,14 +32,9 @@ void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 				FHitResult hitResult;
 				if (GetWorld()->LineTraceSingleByChannel(hitResult, startPos, playerLocation, ECC_Visibility))
 				{
-					if (IsDebug)
-					{
-						UE_LOG(LogTemp, Display, TEXT("%f"), angleBetween);
-						
-						DrawDebugLineTraceSingle(GetWorld(), startPos, playerLocation, EDrawDebugTrace::ForOneFrame, true, hitResult, FLinearColor::Green, FLinearColor::Red, DrawTime);
-					
-						UE_LOG(LogTemp, Log, TEXT("%s hit!"), *hitResult.Component->GetName());
-					}
+					if (IsDebug) UE_LOG(LogTemp, Display, TEXT("%f"), angleBetween);
+					if (IsDebug) DrawDebugLineTraceSingle(GetWorld(), startPos, playerLocation, EDrawDebugTrace::ForOneFrame, true, hitResult, FLinearColor::Green, FLinearColor::Red, DrawTime);
+					if (IsDebug) UE_LOG(LogTemp, Log, TEXT("%s hit!"), *hitResult.Component->GetName());
 					if (hitResult.GetActor() == playerPawn)
 					{
 						OwnerComp.GetBlackboardComponent()->SetValueAsVector(LocationOutput.SelectedKeyName, playerPawn->GetActorLocation());
@@ -49,16 +43,10 @@ void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 				}
 			}
 		}
-		else if (IsDebug)
-		{
-			FHitResult temp;
-			DrawDebugLine(GetWorld(), startPos, startPos +  (enemyOwner->GetActorForwardVector()*traceLength).RotateAngleAxis(LosAngle, FVector(0,0,1)), FColor::Red, false, -1, 0, 1.0f);
-			DrawDebugLine(GetWorld(), startPos, startPos +  (enemyOwner->GetActorForwardVector()*traceLength).RotateAngleAxis(-LosAngle, FVector(0,0,1)), FColor::Red, false, -1, 0, 1.0f);
-		}
 	}
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("BTService_CheckLOS -> Player Pawn Not Found"));
+		if (IsDebug) UE_LOG(LogTemp, Error, TEXT("Player Pawn Not Found"));
 	}
 
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
@@ -66,7 +54,7 @@ void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 
 UBTService_CheckLOS::UBTService_CheckLOS()
 {
-	NodeName = TEXT("BTService_CheckLOS -> Check line of sight for player");
+	NodeName = TEXT("Check line of sight for player");
 }
 
 void UBTService_CheckLOS::InitializeFromAsset(UBehaviorTree& Asset)
