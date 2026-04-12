@@ -17,7 +17,14 @@ class MYPROJECT_API UBTTask_FindRandomLocation : public UBTTask_BlackboardBase
 public:
 	explicit UBTTask_FindRandomLocation();
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
+	virtual void InitializeFromAsset(UBehaviorTree& Asset) override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Blackboard")
+	FBlackboardKeySelector OutputLocationKey;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="AI")
 		float SearchRadius = 2000.0f;
+	
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Debug")
+	bool IsDebug = false;
 };
