@@ -5,7 +5,7 @@
 
 #include "NavigationSystem.h"
 #include "BehaviorTree/BlackboardComponent.h"
-#include "Enemy/AIC_Base.h"
+#include "Enemy/EnemyGround/AIC_EnemyGround.h"
 #include "NavFilters/NavigationQueryFilter.h"
 
 UBTTask_FindRandomLocation::UBTTask_FindRandomLocation()
@@ -33,7 +33,7 @@ EBTNodeResult::Type UBTTask_FindRandomLocation::ExecuteTask(UBehaviorTreeCompone
 					OwnerComp.GetBlackboardComponent()->SetValueAsVector(OutputLocationKey.SelectedKeyName, navLocation.Location);
 				}
 				//debug, draw where enemy is trying to move to
-				if (IsDebug) DrawDebugSphere(GetWorld(), navLocation, 10.0f, 8, FColor::Cyan, false, 3, 0, 2.0f);
+				DrawDebugSphere(GetWorld(), navLocation, 10.0f, 32, FColor::Cyan, false, 3, 0, 2.0f);
 			}
 			return EBTNodeResult::Succeeded; //return success
 		}

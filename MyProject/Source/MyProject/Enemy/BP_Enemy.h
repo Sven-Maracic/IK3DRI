@@ -16,9 +16,16 @@ public:
 	// Sets default values for this character's properties
 	ABP_Enemy();
 
+	
+
 protected:
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="AI")
 		UBehaviorTree* BehaviorTree;
+
+	virtual void Attack();
+	virtual void Move();
+	virtual void BeginPlay() override;
 
 public:
 	UBehaviorTree* GetBehaviourTree() const;

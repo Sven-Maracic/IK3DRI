@@ -3,17 +3,18 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "AIController.h"
 #include "Enemy/AIC_Base.h"
-#include "AIC_EnemyTurret.generated.h"
+#include "AIC_EnemyGround.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class MYPROJECT_API AAIC_EnemyTurret : public AAIC_Base
+class MYPROJECT_API AAIC_EnemyGround : public AAIC_Base
 {
 	GENERATED_BODY()
-	
 public:
-	void FireProjectile(const FVector& TargetLocation) const;
+	UFUNCTION(BlueprintCallable)
+	virtual void LookAt(FVector TargetLocation);
 };
