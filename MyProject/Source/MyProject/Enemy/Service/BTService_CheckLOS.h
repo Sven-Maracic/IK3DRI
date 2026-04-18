@@ -45,4 +45,5 @@ protected:
 	ABP_Enemy* enemyOwner;
 	FVector startPos;
 	APawn* playerPawn;
+	float traceLength;
 };
