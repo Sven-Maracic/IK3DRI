@@ -27,7 +27,7 @@ EBTNodeResult::Type UBTTask_FireRangedAttack::ExecuteTask(UBehaviorTreeComponent
 
 	if (IsValid(enemy))
 	{
-		enemy->FireProjectile(endPos);
+		enemy->FireProjectile(endPos);	//call AIController function with calculated expected position
 	}
 	return Super::ExecuteTask(OwnerComp, NodeMemory);
 }
@@ -39,6 +39,7 @@ FVector UBTTask_FireRangedAttack::GetExpectedLocation() const
 	FVector playerStartVel = playerPawn->GetVelocity();
 	FVector playerStartPos = playerPawn->GetActorLocation();
 	float timeOffset =  (enemy->GetPawn()->GetActorLocation() - playerStartPos).Length() / projectileSpeed;
-	FVector endPos = playerStartPos + FVector(playerStartVel.X * timeOffset, playerStartVel.Y * timeOffset, playerStartVel.Z * timeOffset  / 4) / predictionBias ;
+	//this is some physics formula that i do not remember :)
+	FVector endPos = playerStartPos + FVector(playerStartVel.X * timeOffset, playerStartVel.Y * timeOffset, playerStartVel.Z * timeOffset  / 4) / predictionBias;
 	return endPos;
 }

@@ -21,14 +21,14 @@ void UBTService_PursuitInRange::TickNode(UBehaviorTreeComponent& OwnerComp, uint
 	FVector playerLocation = playerPawn->GetActorLocation();
 	FVector targetVector = playerLocation - startPos;
 	
-	if (IsValid(playerPawn))
+	if (IsValid(playerPawn))	// if player exists
 	{
-		if (targetVector.Length() <= traceLength)
+		if (targetVector.Length() <= traceLength)	//if player in range
 		{
 			FHitResult hitResult;
-			if (GetWorld()->LineTraceSingleByChannel(hitResult, startPos, playerLocation, ECC_Visibility))
+			if (GetWorld()->LineTraceSingleByChannel(hitResult, startPos, playerLocation, ECC_Visibility))	
 			{
-				if (hitResult.GetActor() == playerPawn)
+				if (hitResult.GetActor() == playerPawn)	//if player is visible from enemy POV
 				{
 					OwnerComp.GetBlackboardComponent()->SetValueAsVector(LocationOutput.SelectedKeyName, playerPawn->GetActorLocation());
 					OwnerComp.GetBlackboardComponent()->SetValueAsInt(PlayerStateOutput.SelectedKeyName, 2);

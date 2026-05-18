@@ -8,15 +8,18 @@
 void AAIC_EnemyTurret::FireProjectile(const FVector& TargetLocation) const
 {
 	UObject* target = this->GetPawn();
-	if (ABP_Enemy *enemy = Cast<ABP_Enemy>(target))
+	if (Cast<ABP_Enemy>(target))
 	{
-		UFunction* eventToTrigger = target->FindFunction("FireProjectile");
+		UFunction* eventToTrigger = target->FindFunction("FireProjectile");	//find event on blueprint
+		
+		//create parameters for calling event with targetLocation input
 		struct projectileParameters { FVector targetLocation; };
 		projectileParameters params;
 		params.targetLocation = TargetLocation;
+		
 		if (IsValid(eventToTrigger))
 		{
-			target->ProcessEvent(eventToTrigger, &params);
+			target->ProcessEvent(eventToTrigger, &params);	//call event if it exsits
 		}
 		else UE_LOG(LogTemp, Display, TEXT("AIC_EnemyTurret -> eventToTrigger not valid"));
 	}

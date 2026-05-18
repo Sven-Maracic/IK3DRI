@@ -24,14 +24,14 @@ void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 	
 	if (IsValid(playerPawn))
 	{
-		if (targetVector.Length() <= traceLength)
+		if (targetVector.Length() <= traceLength)	//if player is in range
 		{
 			float dotProd = FVector::DotProduct(enemyOwner->GetActorForwardVector(), targetVector.GetSafeNormal());
 			float angleBetween = FMath::RadiansToDegrees(FMath::Acos(FMath::Clamp(dotProd, -1.0f, 1.0f)));
-			if (angleBetween <= LosAngle.GetValue(OwnerComp))
+			if (angleBetween <= LosAngle.GetValue(OwnerComp))		// if player is withing certain angle of enemy's forward vector (in eyesight)
 			{
 				FHitResult hitResult;
-				if (GetWorld()->LineTraceSingleByChannel(hitResult, startPos, playerLocation, ECC_Visibility))
+				if (GetWorld()->LineTraceSingleByChannel(hitResult, startPos, playerLocation, ECC_Visibility))	//if player is visible from enemy's location
 				{
 					if (IsDebug)
 					{
@@ -41,7 +41,7 @@ void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 					
 						UE_LOG(LogTemp, Log, TEXT("%s hit!"), *hitResult.Component->GetName());
 					}
-					if (hitResult.GetActor() == playerPawn)
+					if (hitResult.GetActor() == playerPawn)	//if is player
 					{
 						OwnerComp.GetBlackboardComponent()->SetValueAsVector(LocationOutput.SelectedKeyName, playerPawn->GetActorLocation());
 						OwnerComp.GetBlackboardComponent()->SetValueAsBool(PlayerDetectedOutput.SelectedKeyName, true);
@@ -51,7 +51,7 @@ void UBTService_CheckLOS::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 		}
 		else if (IsDebug)
 		{
-			FHitResult temp;
+			
 			DrawDebugLine(GetWorld(), startPos, startPos +  (enemyOwner->GetActorForwardVector()*traceLength).RotateAngleAxis(LosAngle, FVector(0,0,1)), FColor::Red, false, -1, 0, 1.0f);
 			DrawDebugLine(GetWorld(), startPos, startPos +  (enemyOwner->GetActorForwardVector()*traceLength).RotateAngleAxis(-LosAngle, FVector(0,0,1)), FColor::Red, false, -1, 0, 1.0f);
 		}
@@ -69,7 +69,7 @@ UBTService_CheckLOS::UBTService_CheckLOS()
 	NodeName = TEXT("BTService_CheckLOS -> Check line of sight for player");
 }
 
-void UBTService_CheckLOS::InitializeFromAsset(UBehaviorTree& Asset)
+void UBTService_CheckLOS::InitializeFromAsset(UBehaviorTree& Asset)	//initalize blackboard assests
 {
 	if (const UBlackboardData* BBAsset = GetBlackboardAsset())
 	{
